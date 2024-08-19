@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import spacy
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
