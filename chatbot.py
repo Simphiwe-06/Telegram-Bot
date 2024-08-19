@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 
 import spacy
-import python-telegram-bot$
+import python-telegram-bot
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 nlp = spacy.load("en_core_web_md")
 
-def start(update: Update, context: CallBackContext) -> None:
+def start(update: Update, context: CallbackContext) -> None:
   update.message.reply_text('Hi! I am your Healthcare Assistant. How can I help you today?')
 
-def handle_message(updateL Update, context: CallbackContext) -> None:
+def handle_message(update Update, context: CallbackContext) -> None:
   user_message = update.message.text
   doc = nlp(user_message)
   response = "I'm here to help with your healthcare queries."
@@ -24,6 +24,6 @@ def main() -> None:
   updater.start_polling()
   updater.idle()
 
-__name__ == ['\"]__main__['\"]:
-  main()
+if __name__ == "__main__":
+    main()
 
