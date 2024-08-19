@@ -16,7 +16,7 @@ def handle_message(update Update, context: CallbackContext) -> None:
   update.message.reply_text(response)
 
 def main() -> None:
-  updater = Updater("YOUR_TELEGRAM_BOT_TOKEN")
+  updater = Updater("")
   dispatcher = updater.dispatcher
   dispatcher.add_handler(CommandHandler("start", start))
   dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
@@ -24,5 +24,5 @@ def main() -> None:
   updater.idle()
 
 if __name__ == "__main__":
-    main()
+  main()
 
