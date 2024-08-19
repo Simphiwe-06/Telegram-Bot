@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import spacy
+import python-telegram-bot$
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
@@ -23,6 +24,6 @@ def main() -> None:
   updater.start_polling()
   updater.idle()
 
-if __name__ = '__main__' :
+__name__ == ['\"]__main__['\"]:
   main()
 
