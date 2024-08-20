@@ -16,7 +16,7 @@ def handle_message(update Update, context: CallbackContext) -> None:
   update.message.reply_text(response)
 
 def main() -> None:
-  updater = Updater("")
+  updater = Updater("7096953448:AAH0-F-oYRD2YsI4W8TECha7FFi5frFDZ2o")
   dispatcher = updater.dispatcher
   dispatcher.add_handler(CommandHandler("start", start))
   dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_message))
